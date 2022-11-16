@@ -1,0 +1,85 @@
+.form-content {
+    height: 90%;
+    display: flex;
+    padding-top: 1%;
+    background-color: #f7f7f7;
+    border: 0px solid ;
+    justify-content: center;
+  }
+  
+  .form {
+    width:60%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F5F5F5;
+    border-radius: 8px;
+    
+  }
+  
+  .form-head {
+    font: normal normal normal 28px/37px Roboto;
+    background: #008CFF 0% 0% no-repeat padding-box;
+    letter-spacing: 0px;
+    color: #ffffff;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .head{
+    padding-left: 33%;
+  }
+  
+  .cross{
+    padding-left: 4cm;
+  }
+  .row-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+    margin-left: 10%
+  }
+  .text{
+    font-size: medium
+  }
+  .text-box{
+    width: 85%;
+    height: 0.6cm;
+  }
+  .last{
+    margin-left: 50%;
+  }
+  .address{
+    height: 1.5cm ;
+  }
+  
+  .state{
+    height: 0.6cm;
+    width: 30%;
+  }
+  .city{
+    width: 30%;
+  }
+  .pincode{
+    width: 29.5%;                      
+  }
+  .city-text{
+    height: 0.5cm
+  }
+ .row-wrap{
+    flex-flow: row wrap ;
+ }
+ .add-button{
+    padding: 5px;
+    width: 15%;
+    margin-right: 10%;
+ }
+ .reset-button{
+    padding: 5px;
+    width: 15%;
+ }
+ .button{
+    justify-content: flex-end;
+    padding: 0% 13%;
+    
+ }

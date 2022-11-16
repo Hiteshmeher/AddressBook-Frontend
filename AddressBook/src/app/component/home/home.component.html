@@ -1,0 +1,47 @@
+<div class="main-content">
+    <div class="header-content">
+        <div class="person-text">Person Details</div>
+        <div>
+            <a routerLink="/addNew" class="add-button">
+                <img class="logo" [src]=addlogo alt=""> Add Person
+            </a>
+        </div>
+    </div>
+
+    <div class="table-main">
+        <table class="table">
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Contact No</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Pin Code</th>
+                <th>Actions</th>
+            </tr>
+            
+            <tr *ngFor="let address of addressBook">
+                <td>{{address.id}}</td>
+                <td>{{address.firstName}}</td>
+                <td>{{address.lastName}}</td>
+                <td>{{address.contactNo}}</td>
+                <td>{{address.email}}</td>
+                <td>{{address.address}}</td>
+                <td>{{address.city}}</td>
+                <td>{{address.state}}</td>
+                <td>{{address.pinCode}}</td>
+                <td>
+                    <img class="delete-logo" id={{address.id}} [src]=deletelogo alt="delete" (click)="onDelete(address.id)">
+                    <img class="delete-logo" id={{address.id}} [src]=editlogo alt="edit" (click)="onUpdatee(address.id)">
+                    
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+
+
+</div>
